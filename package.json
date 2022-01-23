@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/UmarovIkrom/m-benz1/issues"
   },
-  "homepage": "https://github.com/UmarovIkrom/m-benz1#readme"
+  "homepage": "https://github.com/UmarovIkrom/m-benz1#readme",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
 }
