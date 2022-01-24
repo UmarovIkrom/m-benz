@@ -14,4 +14,4 @@ function accordion() {
     })
 }
 
-module.exports = accordion;
+export default accordion;

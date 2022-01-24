@@ -8,4 +8,4 @@ function loader() {
     }, 1750);
 }
 
-module.exports = loader;
+export default loader;

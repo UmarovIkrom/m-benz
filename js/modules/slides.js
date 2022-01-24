@@ -34,4 +34,4 @@ function slides() {
     })
 }
 
-module.exports = slides;
+export default slides;

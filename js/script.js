@@ -1,20 +1,22 @@
 "use strict";
+import tabs from'./modules/tabs';
+import slides from'./modules/slides';
+import modal from'./modules/modal';
+import loader from'./modules/loader';
+import form from'./modules/form';
+import data from'./modules/data';
+import classes from'./modules/classes';
+import accordion from'./modules/accordion';
+import {openModal} from './modules/modal';
 
 document.addEventListener("DOMContentLoaded", () => {
-   const tabs = require('./modules/tabs'),
-         slides = require('./modules/slides'),
-         modal = require('./modules/modal'),
-         loader = require('./modules/loader'),
-         form = require('./modules/form'),
-         data = require('./modules/data'),
-         classes = require('./modules/classes'),
-         accordion = require('./modules/accordion');
+    const modalTimer = setTimeout(() => openModal('.modal', modalTimer), 5000);
 
     tabs();
     slides();
-    modal();    
+    modal('[data-modal]', '.modal', modalTimer);    
     loader();    
-    form();
+    form(modalTimer);
     data();
     classes();    
     accordion();
