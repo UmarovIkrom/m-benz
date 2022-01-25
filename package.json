@@ -16,6 +16,9 @@
   },
   "homepage": "https://github.com/UmarovIkrom/m-benz1#readme",
   "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
     "json-server": "^0.17.0",
     "webpack": "^5.67.0",
     "webpack-cli": "^4.9.1"
