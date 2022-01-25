@@ -49,13 +49,44 @@ function classes() {
         }
     }
 
-        //AXIOS library
-    axios.get("http://localhost:3000/menu")
-        .then(data => {
-            data.data.forEach(({img, altimg, title, descr, price}) => {
-                new CarCard(img, altimg, title, descr, price, '.menu .container').render()
-            })
-        })
+    new CarCard(
+        'img/tabs/1.jpg',
+        'car',
+        '2021 Mercedes-Benz C-Class',
+        `The 2021 Mercedes-Benz C-Class finishes in the top half of our
+        luxury small car rankings. It's powerful and upscale, but it has
+        so-so handli...`, 
+        100,
+        '.menu .container',
+    ).render();
+    new CarCard(
+        'img/tabs/2.jpg',
+        'car',
+        '2021 Mercedes-Benz CLA-Class',
+        `The 2021 Mercedes-Benz C-Class finishes in the top half of our
+        luxury small car rankings. It's powerful and upscale, but it has
+        so-so handli...`  , 
+        100,
+        '.menu .container'
+    ).render()
+    new CarCard(
+        'img/tabs/3.jpg',
+        'car',
+        '2021 Mercedes-Benz SCLA',
+        `The 2021 Mercedes-Benz C-Class finishes in the top half of our
+        luxury small car rankings. It's powerful and upscale, but it has
+        so-so handli...`  , 
+        100,
+        '.menu .container'
+    ).render()
+
+    //     //AXIOS library
+    // axios.get("http://localhost:3000/menu")
+    //     .then(data => {
+    //         data.data.forEach(({img, altimg, title, descr, price}) => {
+    //             new CarCard(img, altimg, title, descr, price, '.menu .container').render()
+    //         })
+    //     })
 
 }
 
